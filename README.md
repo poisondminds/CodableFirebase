@@ -91,8 +91,6 @@ Firestore.firestore().collection("data").document("one").getDocument { document,
 In order to use these types with Cloud Firestore, you need to add the following code somewhere in your app:
 
 ```swift
-import CodableFirebase
-
 extension DocumentReference: DocumentReferenceType {}
 extension GeoPoint: GeoPointType {}
 extension FieldValue: FieldValueType {}
